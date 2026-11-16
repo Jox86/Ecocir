@@ -35,7 +35,8 @@ kit-despliegue-sitio/
 │   ├── eliminar-datos-simulados.py    ← LIMPIEZA: elimina todos los datos simulados
 │   └── calcular-almacenamiento.py     ← cálculo reproducible del informe de almacenamiento
 ├── docs/
-│   └── Estimacion_requisitos_almacenamiento.docx ← informe de almacenamiento (+PDF)
+│   ├── Estimacion_requisitos_almacenamiento.docx ← informe de almacenamiento (+PDF)
+│   └── Guia_ejecucion_VS_Code.docx     ← guía paso a paso para ejecutar el proyecto en VS Code (+PDF)
 └── reportes/                          ← informes JSON de las pruebas de carga
 ```
 
