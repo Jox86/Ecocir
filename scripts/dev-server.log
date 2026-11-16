@@ -1,0 +1,50 @@
+
+> sitio-institucional@1.0.0 dev
+> next dev
+
+   ▲ Next.js 15.5.29
+   - Local:        http://localhost:3000
+   - Network:      http://21.0.12.88:3000
+   - Environments: .env
+
+ ✓ Starting...
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+ ✓ Ready in 1326ms
+ ○ Compiling / ...
+ ✓ Compiled / in 3.8s (551 modules)
+ GET / 200 in 4128ms
+ ✓ Compiled /api/health in 410ms (554 modules)
+ GET /api/health 200 in 633ms
+ GET / 200 in 117ms
+ ✓ Compiled /noticias in 158ms (556 modules)
+ GET /noticias 200 in 292ms
+ ✓ Compiled /nosotros in 170ms (558 modules)
+ GET /nosotros 200 in 237ms
+ GET / 200 in 60ms
+ ✓ Compiled /contacto in 246ms (569 modules)
+ GET /contacto 200 in 451ms
+ ✓ Compiled /api/[tabla] in 272ms (571 modules)
+ POST /api/contacto 201 in 847ms
+ GET /api/eventos 200 in 15ms
+ POST /api/inscripciones 201 in 18ms
+ ✓ Compiled /api/[tabla]/[id] in 167ms (573 modules)
+ DELETE /api/inscripciones/1 200 in 627ms
+ DELETE /api/usuarios/999 404 in 16ms
+ GET / 200 in 153ms
+ GET /api/health 200 in 10ms
+ GET / 200 in 33ms
+ GET /nosotros 200 in 37ms
+ GET /noticias 200 in 97ms
+ GET /contacto 200 in 63ms
+ GET /api/usuarios 200 in 17ms
+ GET /api/noticias 200 in 10ms
+ GET /api/eventos 200 in 12ms
+ GET /api/comentarios 200 in 11ms
+ GET /api/contacto 200 in 9ms
+ GET /api/documentos 200 in 36ms
+ GET /api/inscripciones 200 in 10ms
+[?25h

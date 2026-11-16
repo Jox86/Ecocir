@@ -1,0 +1,47 @@
+{
+  "destino": "http://localhost:3000",
+  "inicio": "1970-01-01T00:19:24",
+  "duracion_efectiva_s": 60.1,
+  "usuarios_simultaneos": 100,
+  "peticiones_totales": 5276,
+  "peticiones_ok": 5276,
+  "peticiones_fallidas": 0,
+  "errores_http": 0,
+  "errores_red": 0,
+  "tasa_error_pct": 0.0,
+  "rps": 87.9,
+  "latencia": {
+    "media_ms": 4.5,
+    "p50_ms": 3.7,
+    "p90_ms": 7.6,
+    "p95_ms": 9.9,
+    "p99_ms": 15.1,
+    "max_ms": 48.7
+  },
+  "estados_http": {
+    "HTTP 200": 5276
+  },
+  "tipos_fallo_red": {},
+  "por_ruta": {
+    "/": {
+      "peticiones": 3162,
+      "errores": 0,
+      "p95_ms": 10.7
+    },
+    "/contacto": {
+      "peticiones": 1065,
+      "errores": 0,
+      "p95_ms": 3.9
+    },
+    "/noticias": {
+      "peticiones": 1049,
+      "errores": 0,
+      "p95_ms": 10.1
+    }
+  },
+  "umbrales": {
+    "latencia_max_ms": 2000.0,
+    "tasa_error_max_pct": 1.0
+  },
+  "veredicto": "APTO"
+}

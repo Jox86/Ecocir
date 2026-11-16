@@ -1,0 +1,78 @@
+// Esquema de base de datos del sitio institucional.
+// Las 7 tablas corresponden a las interfaces definidas en el kit de
+// despliegue (kit-despliegue-sitio/config/interfaces.json), por lo que los
+// scripts de testing, carga y simulación de datos funcionan sin ajustes.
+// Los campos de fecha se guardan como texto para aceptar cualquier formato
+// que envíe el formulario o el simulador; los enteros se normalizan en la API.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+  id        Int      @id @default(autoincrement())
+  nombre    String?
+  email     String?
+  telefono  String?
+  rol       String? // estudiante | docente | administrativo
+  createdAt DateTime @default(now())
+}
+
+model Noticia {
+  id        Int      @id @default(autoincrement())
+  titulo    String?
+  contenido String?
+  autor     String?
+  fecha     String?
+  createdAt DateTime @default(now())
+}
+
+model Evento {
+  id          Int      @id @default(autoincrement())
+  titulo      String?
+  descripcion String?
+  lugar       String?
+  fecha       String?
+  cupos       Int?
+  createdAt   DateTime @default(now())
+}
+
+model Comentario {
+  id        Int      @id @default(autoincrement())
+  autor     String?
+  email     String?
+  texto     String?
+  createdAt DateTime @default(now())
+}
+
+model MensajeContacto {
+  id        Int      @id @default(autoincrement())
+  nombre    String?
+  email     String?
+  asunto    String?
+  mensaje   String?
+  createdAt DateTime @default(now())
+}
+
+model Documento {
+  id          Int      @id @default(autoincrement())
+  titulo      String?
+  categoria   String? // reglamento | academico | administrativo | boletin
+  descripcion String?
+  urlArchivo  String?
+  createdAt   DateTime @default(now())
+}
+
+model Inscripcion {
+  id          Int      @id @default(autoincrement())
+  nombre      String?
+  email       String?
+  eventoId    Int?
+  comentarios String?
+  createdAt   DateTime @default(now())
+}

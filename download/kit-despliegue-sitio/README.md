@@ -55,6 +55,8 @@ kit-despliegue-sitio/
 
 ```bash
 # 1) Construir la imagen desde el código del sitio (adaptar APP_DIR)
+#    Nota: el proyecto de referencia del sitio (Next.js + Prisma/SQLite,
+#    ya probado con este kit) está en la carpeta hermana sitio-institucional/
 APP_DIR=/srv/sitio ./deploy/podman-build.sh
 
 # 2) Arrancar el contenedor (publica http://localhost:8080)
@@ -153,7 +155,10 @@ separado.
 ## 7. Adaptación
 
 - **Stack distinto**: el Containerfile asume Node.js/Next.js + Prisma/SQLite.
-  Si tu sitio arranca con otro comando, ajusta la última línea de
+  El proyecto de referencia `sitio-institucional/` cumple exactamente ese stack
+  (build con `npm run build`, arranque con `next start`, migraciones en
+  `prisma/migrations/`), así que no necesita adaptación. Si tu sitio arranca
+  con otro comando, ajusta la última línea de
   `deploy/container-entrypoint.sh` (p. ej. `php-fpm`, `gunicorn`, `java -jar`).
 - **Rutas e interfaces**: todo se centraliza en `config/interfaces.json`
   (rutas de verificación, perfil de carga, umbrales, interfaces a simular).

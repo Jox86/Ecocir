@@ -1,0 +1,14 @@
+# dependencias y compilado
+node_modules/
+.next/
+out/
+
+# base de datos local (se crea con prisma migrate dev)
+db/
+
+# entorno
+.env
+
+# sistema
+.DS_Store
+*.log

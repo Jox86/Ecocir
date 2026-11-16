@@ -1,0 +1,828 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "generado": "2026-11-16T19:11:45",
+  "interfaces": {
+    "usuarios": [
+      {
+        "id": 1,
+        "marcador": "[SIM] María Navarro",
+        "cuando": "2026-11-16T19:11:36"
+      },
+      {
+        "id": 2,
+        "marcador": "[SIM] Lucía Hernández",
+        "cuando": "2026-11-16T19:11:36"
+      },
+      {
+        "id": 3,
+        "marcador": "[SIM] Ana Navarro",
+        "cuando": "2026-11-16T19:11:36"
+      },
+      {
+        "id": 4,
+        "marcador": "[SIM] Marta Flores",
+        "cuando": "2026-11-16T19:11:36"
+      },
+      {
+        "id": 5,
+        "marcador": "[SIM] Carlos Martínez",
+        "cuando": "2026-11-16T19:11:36"
+      },
+      {
+        "id": 6,
+        "marcador": "[SIM] María Torres",
+        "cuando": "2026-11-16T19:11:36"
+      },
+      {
+        "id": 7,
+        "marcador": "[SIM] Óscar García",
+        "cuando": "2026-11-16T19:11:36"
+      },
+      {
+        "id": 8,
+        "marcador": "[SIM] Óscar López",
+        "cuando": "2026-11-16T19:11:36"
+      },
+      {
+        "id": 9,
+        "marcador": "[SIM] Diego Sánchez",
+        "cuando": "2026-11-16T19:11:36"
+      },
+      {
+        "id": 10,
+        "marcador": "[SIM] Valeria Ramírez",
+        "cuando": "2026-11-16T19:11:36"
+      },
+      {
+        "id": 11,
+        "marcador": "[SIM] Paula Hernández",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 12,
+        "marcador": "[SIM] Elena López",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 13,
+        "marcador": "[SIM] Pedro Rodríguez",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 14,
+        "marcador": "[SIM] Andrés Ramírez",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 15,
+        "marcador": "[SIM] Pedro Rodríguez",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 16,
+        "marcador": "[SIM] Pedro Navarro",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 17,
+        "marcador": "[SIM] Sofía Rodríguez",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 18,
+        "marcador": "[SIM] Jorge Sánchez",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 19,
+        "marcador": "[SIM] Luis Rodríguez",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 20,
+        "marcador": "[SIM] Carlos Torres",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 21,
+        "marcador": "[SIM] Pedro Martínez",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 22,
+        "marcador": "[SIM] Elena Rivera",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 23,
+        "marcador": "[SIM] Sofía Rivera",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 24,
+        "marcador": "[SIM] Diego Pérez",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 25,
+        "marcador": "[SIM] Pedro Flores",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 26,
+        "marcador": "[SIM] Andrés García",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 27,
+        "marcador": "[SIM] Andrés Flores",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 28,
+        "marcador": "[SIM] Elena López",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 29,
+        "marcador": "[SIM] Diego López",
+        "cuando": "2026-11-16T19:11:37"
+      },
+      {
+        "id": 30,
+        "marcador": "[SIM] Jorge Flores",
+        "cuando": "2026-11-16T19:11:38"
+      }
+    ],
+    "noticias": [
+      {
+        "id": 7,
+        "marcador": "[SIM] Charla de orientación vocacional",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 8,
+        "marcador": "[SIM] Torneo deportivo intersecciones",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 9,
+        "marcador": "[SIM] Torneo deportivo intersecciones",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 10,
+        "marcador": "[SIM] Torneo deportivo intersecciones",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 11,
+        "marcador": "[SIM] Torneo deportivo intersecciones",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 12,
+        "marcador": "[SIM] Reunión general de padres y representantes",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 13,
+        "marcador": "[SIM] Nuevo horario de biblioteca",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 14,
+        "marcador": "[SIM] Plan de contingencia climática",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 15,
+        "marcador": "[SIM] Entrega de certificados académicos",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 16,
+        "marcador": "[SIM] Convocatoria de becas 2026",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 17,
+        "marcador": "[SIM] Plan de contingencia climática",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 18,
+        "marcador": "[SIM] Nuevo horario de biblioteca",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 19,
+        "marcador": "[SIM] Plan de contingencia climática",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 20,
+        "marcador": "[SIM] Reunión general de padres y representantes",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 21,
+        "marcador": "[SIM] Nuevo horario de biblioteca",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 22,
+        "marcador": "[SIM] Nuevo horario de biblioteca",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 23,
+        "marcador": "[SIM] Torneo deportivo intersecciones",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 24,
+        "marcador": "[SIM] Convocatoria de becas 2026",
+        "cuando": "2026-11-16T19:11:38"
+      },
+      {
+        "id": 25,
+        "marcador": "[SIM] Entrega de certificados académicos",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 26,
+        "marcador": "[SIM] Mantenimiento programado del laboratorio",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 27,
+        "marcador": "[SIM] Nuevo horario de biblioteca",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 28,
+        "marcador": "[SIM] Reunión general de padres y representantes",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 29,
+        "marcador": "[SIM] Mantenimiento programado del laboratorio",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 30,
+        "marcador": "[SIM] Feria de ciencia y tecnología",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 31,
+        "marcador": "[SIM] Charla de orientación vocacional",
+        "cuando": "2026-11-16T19:11:39"
+      }
+    ],
+    "eventos": [
+      {
+        "id": 7,
+        "marcador": "[SIM] Reunión general de padres y representantes",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 8,
+        "marcador": "[SIM] Charla de orientación vocacional",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 9,
+        "marcador": "[SIM] Nuevo horario de biblioteca",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 10,
+        "marcador": "[SIM] Convocatoria de becas 2026",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 11,
+        "marcador": "[SIM] Charla de orientación vocacional",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 12,
+        "marcador": "[SIM] Reunión general de padres y representantes",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 13,
+        "marcador": "[SIM] Jornada de matrícula abierta",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 14,
+        "marcador": "[SIM] Feria de ciencia y tecnología",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 15,
+        "marcador": "[SIM] Feria de ciencia y tecnología",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 16,
+        "marcador": "[SIM] Plan de contingencia climática",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 17,
+        "marcador": "[SIM] Torneo deportivo intersecciones",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 18,
+        "marcador": "[SIM] Jornada de matrícula abierta",
+        "cuando": "2026-11-16T19:11:39"
+      },
+      {
+        "id": 19,
+        "marcador": "[SIM] Reunión general de padres y representantes",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 20,
+        "marcador": "[SIM] Plan de contingencia climática",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 21,
+        "marcador": "[SIM] Torneo deportivo intersecciones",
+        "cuando": "2026-11-16T19:11:40"
+      }
+    ],
+    "comentarios": [
+      {
+        "id": 1,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 2,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 3,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 4,
+        "marcador": "[SIM] Este es un contenido generado automáticamente para pruebas de capacidad. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 5,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 6,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 7,
+        "marcador": "[SIM] Este es un contenido generado automáticamente para pruebas de capacidad. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 8,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 9,
+        "marcador": "[SIM] La información aquí contenida no corresponde a hechos reales. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 10,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 11,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 12,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 13,
+        "marcador": "[SIM] Este es un contenido generado automáticamente para pruebas de capacidad. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 14,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 15,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 16,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:40"
+      },
+      {
+        "id": 17,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 18,
+        "marcador": "[SIM] Este es un contenido generado automáticamente para pruebas de capacidad. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 19,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 20,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 21,
+        "marcador": "[SIM] La información aquí contenida no corresponde a hechos reales. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 22,
+        "marcador": "[SIM] La información aquí contenida no corresponde a hechos reales. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 23,
+        "marcador": "[SIM] La información aquí contenida no corresponde a hechos reales. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 24,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 25,
+        "marcador": "[SIM] Este es un contenido generado automáticamente para pruebas de capacidad. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 26,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 27,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 28,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 29,
+        "marcador": "[SIM] La información aquí contenida no corresponde a hechos reales. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 30,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 31,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 32,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 33,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 34,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 35,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:41"
+      },
+      {
+        "id": 36,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 37,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 38,
+        "marcador": "[SIM] La información aquí contenida no corresponde a hechos reales. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 39,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 40,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 41,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 42,
+        "marcador": "[SIM] La información aquí contenida no corresponde a hechos reales. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 43,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. Se ha creado para validar el comportamiento de la interfaz con información realista.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 44,
+        "marcador": "[SIM] Este es un contenido generado automáticamente para pruebas de capacidad. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 45,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 46,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 47,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 48,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 49,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 50,
+        "marcador": "[SIM] La información aquí contenida no corresponde a hechos reales. La información aquí contenida no corresponde a hechos reales.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 51,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 52,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 53,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:42"
+      },
+      {
+        "id": 54,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 55,
+        "marcador": "[SIM] El registro forma parte de la simulación de datos y puede eliminarse de forma segura. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 56,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 57,
+        "marcador": "[SIM] Se ha creado para validar el comportamiento de la interfaz con información realista. Los datos simulados llevan el prefijo [SIM] para su identificación posterior.",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 58,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 59,
+        "marcador": "[SIM] La información aquí contenida no corresponde a hechos reales. El registro forma parte de la simulación de datos y puede eliminarse de forma segura.",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 60,
+        "marcador": "[SIM] Los datos simulados llevan el prefijo [SIM] para su identificación posterior. Este es un contenido generado automáticamente para pruebas de capacidad.",
+        "cuando": "2026-11-16T19:11:43"
+      }
+    ],
+    "mensajes-contacto": [
+      {
+        "id": 2,
+        "marcador": "[SIM] Jornada de matrícula abierta",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 3,
+        "marcador": "[SIM] Reunión general de padres y representantes",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 4,
+        "marcador": "[SIM] Entrega de certificados académicos",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 5,
+        "marcador": "[SIM] Entrega de certificados académicos",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 6,
+        "marcador": "[SIM] Entrega de certificados académicos",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 7,
+        "marcador": "[SIM] Feria de ciencia y tecnología",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 8,
+        "marcador": "[SIM] Nuevo horario de biblioteca",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 9,
+        "marcador": "[SIM] Jornada de matrícula abierta",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 10,
+        "marcador": "[SIM] Nuevo horario de biblioteca",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 11,
+        "marcador": "[SIM] Torneo deportivo intersecciones",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 12,
+        "marcador": "[SIM] Jornada de matrícula abierta",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 13,
+        "marcador": "[SIM] Plan de contingencia climática",
+        "cuando": "2026-11-16T19:11:43"
+      },
+      {
+        "id": 14,
+        "marcador": "[SIM] Entrega de certificados académicos",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 15,
+        "marcador": "[SIM] Reunión general de padres y representantes",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 16,
+        "marcador": "[SIM] Jornada de matrícula abierta",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 17,
+        "marcador": "[SIM] Jornada de matrícula abierta",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 18,
+        "marcador": "[SIM] Entrega de certificados académicos",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 19,
+        "marcador": "[SIM] Jornada de matrícula abierta",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 20,
+        "marcador": "[SIM] Charla de orientación vocacional",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 21,
+        "marcador": "[SIM] Torneo deportivo intersecciones",
+        "cuando": "2026-11-16T19:11:44"
+      }
+    ],
+    "documentos": [
+      {
+        "id": 1,
+        "marcador": "[SIM] Jornada de matrícula abierta",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 2,
+        "marcador": "[SIM] Convocatoria de becas 2026",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 3,
+        "marcador": "[SIM] Charla de orientación vocacional",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 4,
+        "marcador": "[SIM] Nuevo horario de biblioteca",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 5,
+        "marcador": "[SIM] Torneo deportivo intersecciones",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 6,
+        "marcador": "[SIM] Reunión general de padres y representantes",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 7,
+        "marcador": "[SIM] Reunión general de padres y representantes",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 8,
+        "marcador": "[SIM] Plan de contingencia climática",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 9,
+        "marcador": "[SIM] Feria de ciencia y tecnología",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 10,
+        "marcador": "[SIM] Feria de ciencia y tecnología",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 11,
+        "marcador": "[SIM] Feria de ciencia y tecnología",
+        "cuando": "2026-11-16T19:11:44"
+      },
+      {
+        "id": 12,
+        "marcador": "[SIM] Plan de contingencia climática",
+        "cuando": "2026-11-16T19:11:44"
+      }
+    ]
+  }
+}
