@@ -1,0 +1,38 @@
+# =============================================================================
+# Ignorados al construir la imagen (equivale a .dockerignore para Podman).
+# podman-build.sh copia este archivo como ".containerignore" en la carpeta
+# del código del sitio antes de construir.
+# =============================================================================
+
+# Control de versiones y archivos del kit de despliegue
+.git
+.gitignore
+node_modules
+
+# Artefactos de construcción previos
+.next
+out
+dist
+build
+
+# Bases de datos locales (la base real vive en el volumen del contenedor)
+db
+*.db
+*.sqlite
+*.sqlite3
+
+# Entorno y secretos locales (no deben copiarse a la imagen)
+.env
+.env.local
+.env*.local
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+
+# Registros y temporales
+*.log
+npm-debug.log*
+tmp

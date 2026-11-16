@@ -1,0 +1,72 @@
+# =============================================================================
+# Containerfile del sitio institucional  (compatible con Podman, NO usa Docker)
+#
+# Construcción (3 etapas):
+#   1) deps    -> instala dependencias npm (npm ci)
+#   2) build   -> genera cliente Prisma (si existe) y compila la aplicación
+#   3) runner  -> imagen final mínima, usuario sin privilegios, salud integrada
+#
+# El contexto de construcción debe ser la CARPETA DEL CÓDIGO DEL SITIO.
+# No ejecutes este archivo directamente; usa deploy/podman-build.sh, que
+# prepara el contexto y el archivo .containerignore automáticamente.
+#
+# Supuesto de stack: aplicación Node.js / Next.js con base de datos SQLite
+# (Prisma). Si tu sitio usa otro comando de arranque, ajusta la última línea
+# de deploy/container-entrypoint.sh (ver README.md, sección "Adaptación").
+# =============================================================================
+
+# ---------- Etapa 1: dependencias ----------
+FROM node:20-slim AS deps
+WORKDIR /app
+ENV NEXT_TELEMETRY_DISABLED=1
+COPY package.json package-lock.json* ./
+RUN npm ci
+
+# ---------- Etapa 2: construcción ----------
+FROM node:20-slim AS build
+WORKDIR /app
+ENV NEXT_TELEMETRY_DISABLED=1
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+# Genera el cliente Prisma solo si el proyecto lo usa (SQLite vía schema.prisma)
+RUN if [ -f prisma/schema.prisma ]; then npx prisma generate; fi
+RUN npm run build
+# Garantiza que las rutas copiadas a la imagen final existan aunque el
+# proyecto no tenga carpeta public/ o prisma/
+RUN mkdir -p public prisma .next
+
+# ---------- Etapa 3: ejecución ----------
+FROM node:20-slim AS runner
+WORKDIR /app
+ENV NODE_ENV=production \
+    NEXT_TELEMETRY_DISABLED=1 \
+    PORT=3000 \
+    HOSTNAME=0.0.0.0
+# sqlite3 se incluye para permitir copias de seguridad en caliente (podman-backup.sh)
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends sqlite3 ca-certificates \
+    && rm -rf /var/lib/apt/lists/* \
+    && useradd --create-home --uid 10001 sitio
+
+COPY --from=build --chown=sitio:sitio /app/package.json ./package.json
+COPY --from=build --chown=sitio:sitio /app/node_modules ./node_modules
+COPY --from=build --chown=sitio:sitio /app/.next      ./.next
+COPY --from=build --chown=sitio:sitio /app/prisma     ./prisma
+COPY --from=build --chown=sitio:sitio /app/public     ./public
+COPY .container-entrypoint.sh /usr/local/bin/container-entrypoint
+
+RUN chmod +x /usr/local/bin/container-entrypoint \
+    && mkdir -p /app/db \
+    && chown -R sitio:sitio /app
+
+USER sitio
+
+EXPOSE 3000
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=45s --retries=3 \
+    CMD node -e "fetch('http://127.0.0.1:'+(process.env.PORT||3000)+'/')\
+.then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+
+# Aplica migraciones (si hay Prisma) y arranca el servidor.
+# La base de datos vive en el volumen montado en /app/db (datos persistentes).
+ENTRYPOINT ["container-entrypoint"]

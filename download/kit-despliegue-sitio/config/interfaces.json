@@ -1,0 +1,158 @@
+{
+  "sitio": {
+    "nombre": "Sitio institucional",
+    "baseUrl": "http://localhost:8080",
+    "endpointSalud": "/api/health",
+    "nota": "Cambia baseUrl si el sitio corre en otro host o puerto. El endpoint de salud es opcional: si el sitio no tiene /api/health, el testing lo marca como aviso y continúa."
+  },
+
+  "rutasVerificacion": ["/", "/nosotros", "/noticias", "/contacto"],
+
+  "umbrales": {
+    "latenciaMaxMs": 2000,
+    "tasaErrorMaxPct": 1.0,
+    "nota": "latenciaMaxMs: tiempo p95 máximo aceptable; tasaErrorMaxPct: porcentaje máximo de peticiones con error (carga)."
+  },
+
+  "carga": {
+    "usuariosSimultaneos": 100,
+    "duracionSegundos": 60,
+    "rampaSegundos": 15,
+    "pausaMinSeg": 0.5,
+    "pausaMaxSeg": 1.5,
+    "rutaEntrada": "/",
+    "rutasNavegacion": ["/", "/", "/", "/noticias", "/contacto"],
+    "nota": "usuariosSimultaneos: mínimo exigido 100 (a la vez). rutasNavegacion: se eligen al azar en cada iteración; repetir '/' hace que la mayoría de la carga sea la entrada al sitio."
+  },
+
+  "interfaces": [
+    {
+      "id": "usuarios",
+      "nombre": "Gestión de usuarios",
+      "simular": true,
+      "metodo": "POST",
+      "ruta": "/api/usuarios",
+      "rutaConsulta": "/api/usuarios",
+      "rutaEliminar": "/api/usuarios/{id}",
+      "campoId": "id",
+      "campoMarcador": "nombre",
+      "cantidad": 30,
+      "plantilla": {
+        "nombre": "[SIM] {nombre}",
+        "email": "{email}",
+        "telefono": "{telefono}",
+        "rol": "{opcion:estudiante,docente,administrativo}"
+      }
+    },
+    {
+      "id": "noticias",
+      "nombre": "Noticias / Anuncios",
+      "simular": true,
+      "metodo": "POST",
+      "ruta": "/api/noticias",
+      "rutaConsulta": "/api/noticias",
+      "rutaEliminar": "/api/noticias/{id}",
+      "campoId": "id",
+      "campoMarcador": "titulo",
+      "cantidad": 25,
+      "plantilla": {
+        "titulo": "[SIM] {titulo}",
+        "contenido": "{parrafo}",
+        "autor": "{nombre}",
+        "fecha": "{fecha}"
+      }
+    },
+    {
+      "id": "eventos",
+      "nombre": "Agenda de eventos",
+      "simular": true,
+      "metodo": "POST",
+      "ruta": "/api/eventos",
+      "rutaConsulta": "/api/eventos",
+      "rutaEliminar": "/api/eventos/{id}",
+      "campoId": "id",
+      "campoMarcador": "titulo",
+      "cantidad": 15,
+      "plantilla": {
+        "titulo": "[SIM] {titulo}",
+        "descripcion": "{parrafo}",
+        "lugar": "{opcion:Auditorio principal,Sala de conferencias,Patio central,Biblioteca}",
+        "fecha": "{fecha}",
+        "cupos": "{entero:20,120}"
+      }
+    },
+    {
+      "id": "comentarios",
+      "nombre": "Comentarios",
+      "simular": true,
+      "metodo": "POST",
+      "ruta": "/api/comentarios",
+      "rutaConsulta": "/api/comentarios",
+      "rutaEliminar": "/api/comentarios/{id}",
+      "campoId": "id",
+      "campoMarcador": "texto",
+      "cantidad": 60,
+      "plantilla": {
+        "autor": "{nombre}",
+        "email": "{email}",
+        "texto": "[SIM] {parrafo}"
+      }
+    },
+    {
+      "id": "mensajes-contacto",
+      "nombre": "Formulario de contacto",
+      "simular": true,
+      "metodo": "POST",
+      "ruta": "/api/contacto",
+      "rutaConsulta": "/api/contacto",
+      "rutaEliminar": "/api/contacto/{id}",
+      "campoId": "id",
+      "campoMarcador": "asunto",
+      "cantidad": 20,
+      "plantilla": {
+        "nombre": "{nombre}",
+        "email": "{email}",
+        "asunto": "[SIM] {titulo}",
+        "mensaje": "{parrafo}"
+      }
+    },
+    {
+      "id": "documentos",
+      "nombre": "Repositorio de documentos",
+      "simular": true,
+      "metodo": "POST",
+      "ruta": "/api/documentos",
+      "rutaConsulta": "/api/documentos",
+      "rutaEliminar": "/api/documentos/{id}",
+      "campoId": "id",
+      "campoMarcador": "titulo",
+      "cantidad": 12,
+      "plantilla": {
+        "titulo": "[SIM] {titulo}",
+        "categoria": "{opcion:reglamento,academico,administrativo,boletin}",
+        "descripcion": "{parrafo}",
+        "urlArchivo": "{url}"
+      }
+    },
+    {
+      "id": "inscripciones",
+      "nombre": "Inscripciones a eventos",
+      "simular": false,
+      "metodo": "POST",
+      "ruta": "/api/inscripciones",
+      "rutaConsulta": "/api/inscripciones",
+      "rutaEliminar": "/api/inscripciones/{id}",
+      "campoId": "id",
+      "campoMarcador": "nombre",
+      "cantidad": 40,
+      "plantilla": {
+        "nombre": "[SIM] {nombre}",
+        "email": "{email}",
+        "eventoId": "{entero:1,15}",
+        "comentarios": "{parrafo}"
+      }
+    }
+  ],
+
+  "notaInterfaces": "Cada entrada describe UNA interfaz del sitio. 'simular' activa/desactiva la generación de datos; 'plantilla' acepta marcadores {nombre} {email} {telefono} {titulo} {parrafo} {fecha} {url} {entero:a,b} {opcion:a,b,c,...}. Los campos marcados con el prefijo [SIM] permiten identificar y eliminar después los datos simulados. Ajusta rutas y campos a tu API real: las interfaces que no respondan se saltan con aviso y el resto continúa."
+}

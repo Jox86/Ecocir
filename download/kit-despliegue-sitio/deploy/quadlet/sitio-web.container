@@ -1,0 +1,45 @@
+# =============================================================================
+# Servicio systemd (Quadlet) para que el sitio arranque automáticamente con el
+# servidor institucional, usando Podman. Quadlet es el mecanismo nativo de
+# Podman para servicios systemd; no requiere Docker ni docker-compose.
+#
+# INSTALACIÓN (como el usuario que ejecuta el contenedor):
+#   1) Construye antes la imagen:   APP_DIR=/ruta/sitio ./deploy/podman-build.sh
+#   2) Copia este archivo:
+#        - rootless (recomendado):  mkdir -p ~/.config/containers/systemd
+#                                   cp deploy/quadlet/sitio-web.container ~/.config/containers/systemd/
+#        - como root:               cp deploy/quadlet/sitio-web.container /etc/containers/systemd/
+#   3) Recarga y activa:
+#        rootless:  systemctl --user daemon-reload && systemctl --user enable --now sitio-web.service
+#        root:      systemctl daemon-reload       && systemctl enable --now sitio-web.service
+#   4) Comprueba:  systemctl --user status sitio-web.service
+#
+# NOTAS:
+#   - Con Quadlet la imagen debe llamarse igual que aquí (localhost/sitio-web:latest).
+#   - Puertos por debajo de 1024 (p. ej. 80) requieren ejecutar como root o
+#     elevar el límite:  sudo sysctl net.ipv4.ip_unprivileged_port_start=80
+# =============================================================================
+
+[Unit]
+Description=Sitio web institucional (contenedor Podman, sin Docker)
+After=network-online.target
+
+[Container]
+Image=localhost/sitio-web:latest
+ContainerName=sitio-web
+PublishPort=8080:3000
+# Volumen persistente de la base de datos SQLite (el volumen debe existir;
+# créalo con: podman volume create sitio-db-data)
+Volume=sitio-db-data:/app/db:Z
+Environment=DATABASE_URL=file:/app/db/custom.db
+Environment=NODE_ENV=production
+# Reinicio ante fallos del contenedor
+Notify=healthy
+
+[Service]
+Restart=always
+TimeoutStartSec=300
+
+[Install]
+# rootless: default.target   |   root: multi-user.target
+WantedBy=default.target
