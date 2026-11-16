@@ -33,7 +33,8 @@ kit-despliegue-sitio/
 │   ├── simulacion-carga-100-usuarios.py ← carga con asyncio (solo stdlib de Python 3)
 │   ├── simular-datos.py               ← crea datos [SIM] en cada interfaz vía API
 │   ├── eliminar-datos-simulados.py    ← LIMPIEZA: elimina todos los datos simulados
-│   └── calcular-almacenamiento.py     ← cálculo reproducible del informe de almacenamiento
+│   ├── calcular-almacenamiento.py     ← cálculo reproducible del informe de almacenamiento
+│   └── sitio-de-prueba.py             ← mock del sitio (puerto 8123) para probar el kit sin el código real
 ├── docs/
 │   ├── Estimacion_requisitos_almacenamiento.docx ← informe de almacenamiento (+PDF)
 │   └── Guia_ejecucion_VS_Code.docx     ← guía paso a paso para ejecutar el proyecto en VS Code (+PDF)
